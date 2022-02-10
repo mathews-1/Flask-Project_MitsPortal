@@ -1,0 +1,45 @@
+<html> 
+
+    <head> 
+
+        <meta charset="UTF-8"> 
+
+        <title> Student Login </title> 
+
+           
+
+    </head> 
+    <link rel="stylesheet" href="../static/homecss.css" type="text/css">
+    <body>
+        <div class="header">
+            <h1>WELCOME TO MITS STUDENT LOGIN</h1>
+            <p>CSE Department</p>
+        </div>
+
+        <div class="register" align="center"> 
+
+                <h1 class="word">Student Login</h1> 
+        </br>
+
+            <h2> 
+
+                <form action="{{ url_for('student') }}" method="post"> 
+
+                  <div class="msg">{{ msg }}</div> 
+
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br> 
+
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br> 
+                    <button type="submit">Signin</button>
+                   
+
+                </form> 
+
+            </h2> 
+
+
+        </div> 
+
+    </body> 
+
+</html> 

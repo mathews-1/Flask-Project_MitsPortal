@@ -1,0 +1,13 @@
+<table border="1">
+    {% for header in headers%}
+    <th>{{header}}</th>
+    {%endfor%}
+    {% for row in user%}
+    <tr>
+        {%for value in row.values()%}
+        <td>{{value}}</td>
+        {%endfor%}
+    </tr>
+    {% endfor %}
+</table>
+<a href="{{ url_for('logout') }}" class="btn">Logout</a> 

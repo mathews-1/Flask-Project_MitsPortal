@@ -1,0 +1,44 @@
+<html> 
+
+    <head> 
+
+        <meta charset="UTF-8"> 
+
+        <title> Index </title> 
+                  
+
+    </head> 
+    <link rel="stylesheet" href="../static/homecss.css" type="text/css">
+    <body bgcolor="#dddce0"></br>
+        <div align="center">
+
+                <h1 class="word">Index</h1> 
+
+            </br></br></br> 
+
+                <h1 class="bottom"> 
+
+                     Hi {{session.username}}!!</br></br> Welcome to the index page...                  
+
+                </h1></br></br></br> 
+                <form action="{{url_for('data')}}" method="POST" >
+                    <div class="msg">{{ msg }}</div> 
+                    <h1>Enter Data</h1><br><br>
+                    <label>Student Name:</label>
+                    <input type="text" placeholder="Enter Student Name" id="name" name="name"><br><br>
+                    <label>Student Id:</label>
+                    <input type="text" placeholder="Enter Subject Name" id="sid" name="sid"><br><br>
+                    <label>Subject Name:</label>
+                    <input type="text" placeholder="Enter Subject Name"  name="subject" id="subject"class="textbox"><br><br>
+                    <label>Mark:</label>
+                    <input type="text" placeholder="Enter mark"  name="mark" id="mark" class="textbox"><br><br>
+                    <label>Attendence:</label>
+                    <input type="text" placeholder="Enter attendence"  name="attendence" id="attendence" class="textbox"><br><br>
+                     <button type="submit">submit</button></br> 
+                
+                </form>
+                <a href="{{ url_for('logout') }}" class="btn">Logout</a> 
+                        
+        </div> 
+
+    </body>

@@ -1,0 +1,27 @@
+
+/* #heading {position:center;
+    text-align: center;
+    font-size: 80px;
+    color: blue;
+    } */
+
+.headers{
+        text-align: center;
+        background: #e22121;
+        color: white;
+        font-size: 30px;
+        border: 5px outset black;
+      }
+
+.forms{
+    margin-top:150px;
+
+}
+
+.div-1 {
+    background: #dddce0;
+    font-size: 30px;
+    border: 5px outset black;
+    height: 500px;
+
+}
